@@ -40,7 +40,7 @@ jobs:
           git config --global user.email "contact@madladsquad.com"
           git fetch --all
           git checkout master || git checkout -b master
-          ./sanitize.py
+          ./sanitize-official.py
       - name: Commit
         id: commit
         run: |
