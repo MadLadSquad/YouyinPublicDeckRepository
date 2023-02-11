@@ -7,4 +7,5 @@ To contribute a deck, first export one from the youyin website using the `Export
 
 ![image](https://user-images.githubusercontent.com/40400590/217593295-56180588-8bd6-4565-9fe3-1596d9f7b6fc.png)
 
-Next, select share on the public deck repository and follow the instructions. After the process is finished your deck should be added in about 6-24 hours
+Next, fork this repository, add the file that was downloaded to your computer and customize its name. When you're ready create a pull request detailing
+the deck, its contents and its purpose
