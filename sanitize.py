@@ -8,7 +8,9 @@ def main():
         filename = os.fsdecode(file)
         if (filename.endswith(".yydeck.json")):
             f = open(filename, "r+")
-            data = json.load(f)
+            dt = f.read().replace("<", "&lt").replace(">", "&gt")
+
+            data = json.loads(dt)
             for i in data:
                 i["knowledge"] = 0
             #endfor
