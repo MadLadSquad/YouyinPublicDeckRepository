@@ -36,6 +36,7 @@ jobs:
           git config --global user.name "Madman10K"
           git config --global user.email "contact@madladsquad.com"
           git fetch --all
+          ./sanitize.py
       - name: Commit
         id: commit
         run: |
