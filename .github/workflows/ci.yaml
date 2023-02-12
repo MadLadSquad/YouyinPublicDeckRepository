@@ -44,4 +44,4 @@ jobs:
       - name: Commit
         id: commit
         run: |
-          (git add . && git commit -m "auto" && git push origin master && echo "com=+" >> $GITHUB_OUTPUT) || echo "com=?" >> $GITHUB_OUTPUT
+          (git add . && git commit -m "Sanitize files" && git push origin master && echo "com=+" >> $GITHUB_OUTPUT) || echo "com=?" >> $GITHUB_OUTPUT
