@@ -13,7 +13,7 @@ Next, create a [github account](https://github.com/)
 After that you need to fork this repository
 ![image](https://user-images.githubusercontent.com/40400590/218274678-62b382b4-42d9-4517-9342-fb8eed4c453a.png)
 
-Next, rename your saved file, remember that `-` will be replaced with ` ` so a deck named `kangxi-radicals.yydeck.json` will become `Kangxi Radicals`
+Next, rename your saved file, remember that `-` will be replaced with ` ` so a deck named `kangxi-radicals.yydeck.json` will become `kangxi radicals`
 on the marketplace page
 
 After the files are renamed upload it under the `community` folder under the latest release.
