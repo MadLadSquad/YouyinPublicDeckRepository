@@ -13,8 +13,12 @@ Next, create a [github account](https://github.com/)
 After that you need to fork this repository
 ![image](https://user-images.githubusercontent.com/40400590/218274678-62b382b4-42d9-4517-9342-fb8eed4c453a.png)
 
-Next, rename your saved file, remember that `-` will be replaced with ` ` so a deck named `kangxi-radicals.yydeck.json` will become `Kangxi Radicals`
+Next, rename your saved file, remember that `-` will be replaced with ` ` so a deck named `kangxi-radicals.yydeck.json` will become `kangxi radicals`
 on the marketplace page
+
+If you're submitting a deck that's already pre-leveled up and want to leave the data there(for example a deck where every card is set at level 3) you
+should change the file extension of the deck from `.yydeck.json` to `.presetlvl.yydeck.json` and make sure the name of the deck represents it.
+Not setting the file extension like this will result in the removal of all data once the automatic sanitizer goes trough your deck
 
 After the files are renamed upload it under the `community` folder under the latest release.
 
@@ -26,7 +30,3 @@ Here, create a descriptive title and description like this:
 
 and finally click submit. Make sure to monitor the pull request from a response from the maintainers. Once a pull request is approved and merged, changes
 should apply in about 10 minutes
-
-If you're submitting a deck that's already pre-leveled up and want to leave the data there(for example a deck where every card is set at level 3) you
-should change the file extension of the deck from `.yydeck.json` to `.presetlvl.yydeck.json` and make sure the name of the deck represents it.
-Not setting the file extension like this will result in the removal of all data once the automatic sanitizer goes trough your deck
