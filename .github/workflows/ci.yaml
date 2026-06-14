@@ -42,6 +42,7 @@ jobs:
           git checkout master || git checkout -b master
           ./sanitize-official.py
           ./sanitize-community.py
+          ./generate-marketplace-map.py
       - name: Commit
         id: commit
         run: |
