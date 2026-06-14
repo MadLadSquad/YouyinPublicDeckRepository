@@ -11,14 +11,14 @@ def main():
             dt = f.read().replace("<", "&lt").replace(">", "&gt")
 
             data = json.loads(dt)
-            for i in data:
+            for i in data["cards"]:
+                i["knowledge"] = 0
+            #endfor
+            for i in data["phrases"]:
                 i["knowledge"] = 0
             #endfor
             f.seek(0)
             json.dump(data, f)
-        #endif
-    #endfor
-#endfunc
-
+            f.truncate()
 
 main()

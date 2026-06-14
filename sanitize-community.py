@@ -15,16 +15,15 @@ def main():
 
                     data = json.loads(dt)
                     if not filename.endswith(".presetlvl.yydeck.json"):
-                        for i in data:
+                        for i in data["cards"]:
                             i["knowledge"] = 0
-                    #endfor
+                        #endfor
+                        for i in data["phrases"]:
+                            i["knowledge"] = 0
+                        #endfor
+                    #endif
                     f.seek(0)
                     json.dump(data, f)
-                #endif
-            #endfor
-        #endif
-    #endfor
-#endfunc
-
+                    f.truncate()
 
 main()
