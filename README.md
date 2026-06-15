@@ -25,7 +25,7 @@ should change the file extension of the deck from `.yydeck.json` to `.presetlvl.
 > [!CAUTION]
 > Not setting the file extension like this will result in the removal of all data once the automatic sanitizer goes trough your deck
 
-After the files are renamed upload it under the `community` folder under the latest release.
+After the files are renamed upload it under the `community` folder under the deck's target language(e.g. Chinese, or add under `Multilingual` for decks for multiple languages).
 
 When you're done simply create a pull request
 ![image](https://user-images.githubusercontent.com/40400590/218274855-b18e6ac1-079b-4384-a287-84a2a982e25b.png)
