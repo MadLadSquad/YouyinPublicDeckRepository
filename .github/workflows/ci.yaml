@@ -46,3 +46,15 @@ jobs:
         id: commit
         run: |
           (git add . && git commit -m "Sanitize files" && git push origin master && echo "com=+" >> $GITHUB_OUTPUT) || echo "com=?" >> $GITHUB_OUTPUT
+      - name: Push to Cloudflare R2
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.PACKAGE_R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.PACKAGE_R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+        run: |
+          ENDPOINT_URL="https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com"
+          aws s3 cp official/ s3://youyin-data/official/ --recursive --endpoint-url "$ENDPOINT_URL"
+          aws s3 cp unofficial/ s3://youyin-data/unofficial/ --recursive --endpoint-url "$ENDPOINT_URL"
+          aws s3 cp marketplace-map.json s3://youyin-data/marketplace-map.json --endpoint-url "$ENDPOINT_URL"
+
