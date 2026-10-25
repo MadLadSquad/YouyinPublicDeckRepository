@@ -32,3 +32,6 @@
 *.app
 
 hanzi-writer-data-youyin/
+.agents/
+.claude/
+graphify-out/
